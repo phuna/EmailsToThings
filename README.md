@@ -18,5 +18,5 @@ Firstly, we need to be able to open the Outlook message when clicking on the lin
 1. Create an Automator application and make it run script `Outlook To Things Helper.scpt` (paste script content into Automaton's `Run AppleScript` action).
 2. After creating the application, please move it to `/Applications/` folder (must move it from somewhere to `/Applications/` folder to make Mac OS X recognizes our custom URL scheme
 
-After above steps, you can run 'Outlook To Things.sept' script and it will show a dialog which allows you to create a new Things task from the selected message. Also clicking on the message link in task will open corresponding message in Outlook.
+After above steps, you can run `Outlook To Things.scpt` script and it will show a dialog which allows you to create a new Things task from the selected message. Also clicking on the message link in task will open corresponding message in Outlook.
 
