@@ -20,3 +20,16 @@ Firstly, we need to be able to open the Outlook message when clicking on the lin
 
 After above steps, you can run `Outlook To Things.scpt` script and it will show a dialog which allows you to create a new Things task from the selected message. Also clicking on the message link in task will open corresponding message in Outlook.
 
+Recommendation
+--------------
+In my setup, I use Keyboard Maestro to define a shortcut key to invoke corresponding script. 
+
+Credits
+=======
+Inspired by this post by LuMe96 on Cultured Code forum:
+
+https://culturedcode.com/forums/read.php?7,48866,page=1
+
+License
+=======
+[MIT](https://github.com/phuna/EmailsToThings/blob/master/LICENSE)
