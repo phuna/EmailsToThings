@@ -7,7 +7,7 @@ How to use
 ==========
 Use Mail app
 ------------
-Just run `Mail To Things.sept` script, it will show a dialog which allows you to create a new Things task from the selected message.
+Just run `Mail To Things.scpt` script, it will show a dialog which allows you to create a new Things task from the selected message.
 
 *Note:* When using conversation mode, if you click on a conversation, it most of the time selects the latest message, but in some of my tests it selects a random message in that conversation. So you should expand the conversation and select the message you want to create task for, or another way is to not use conversation mode.
 
@@ -19,17 +19,17 @@ Firstly, we need to be able to open the Outlook message when clicking on the lin
 2. Open application's `info.plist` file (right-click on the app and choose "Show Package Contents". In the `<dic>` section add below information to it:
 
   ```xml
-  <key>CFBundleURLTypes</key>
-  <array>
-      <dict>
-          <key>CFBundleURLName</key>
-          <string>Local File</string>
-          <key>CFBundleURLSchemes</key>
-          <array>
-              <string>local</string>
-          </array>
-      </dict>
-  </array>
+<key>CFBundleURLTypes</key>
+<array>
+    <dict>
+        <key>CFBundleURLName</key>
+        <string>Outlook To Things Helper</string>
+        <key>CFBundleURLSchemes</key>
+        <array>
+            <string>outlooktothings</string>
+        </array>
+    </dict>
+</array>
   ```
 
 3. Move your application to `/Applications/` folder (must move it from somewhere to `/Applications/` folder to make Mac OS X recognizes our custom URL scheme)
